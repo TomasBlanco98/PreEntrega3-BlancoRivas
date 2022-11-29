@@ -1,0 +1,28 @@
+/* estilos del main contacto */
+main {
+    form {
+        width: 450px;
+        margin: 10px;
+        background-color: nth($colores, 6);
+        fieldset {
+            text-align: center;
+            border-color: nth($colores, 3);
+            legend {
+                color: $color-texto;
+            }
+            div {
+                margin: 20px 80px 20px 80px;
+                input {
+                    @extend %estilos-contacto;
+                }
+                textarea {
+                    @extend %estilos-contacto;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .boton-enviar {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,340 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main, main ol li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+main form fieldset div input, main form fieldset div textarea {
+  width: 100%;
+  padding: 10px; }
+
+main div p, main .subtitulo {
+  text-transform: uppercase;
+  font-size: 1.4rem; }
+
+/* estilos del body */
+body {
+  background-image: url(../img/fondo-pantalla.jpg);
+  background-size: cover;
+  font-family: 'Lato', sans-serif; }
+  body .contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.1fr;
+    grid-template-areas: "header"
+ "main"
+ "footer"; }
+
+/* estilos del header */
+header {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 11%, rgba(71, 14, 95, 0.919) 53%, #0c1670 100%);
+  padding: 1rem;
+  grid-area: header;
+  /* estilos del nav BT */ }
+  header h1 {
+    color: #BE80C5;
+    text-align: center;
+    text-transform: uppercase; }
+  header nav .boton-nav {
+    background-color: #260E72;
+    margin: 10px;
+    border-radius: 60px;
+    box-shadow: 3px 2px 5px black;
+    text-shadow: 3px 2px 5px black; }
+  header nav .boton-color {
+    color: #BE80C5; }
+  header nav .color-rosa {
+    background-color: #751280;
+    color: whitesmoke; }
+
+/* estilos del main */
+main {
+  grid-area: main; }
+  main .portada {
+    width: 100%; }
+  main .nombre {
+    display: none; }
+  main p {
+    color: #FFECBF;
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 3px 2px 5px black;
+    margin-left: 4rem;
+    margin-right: 4rem; }
+    main p span {
+      color: #1AAE9F; }
+    main p .frase {
+      font-weight: bold;
+      color: #1AAE9F; }
+
+/* estilos del footer */
+footer {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 11%, rgba(71, 14, 95, 0.919) 53%, #0c1670 100%);
+  grid-area: footer; }
+  footer h3 {
+    color: #BE80C5;
+    font-size: 16px;
+    text-align: center; }
+  footer ul {
+    display: none; }
+
+/* estilos del main tickets */
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: 2rem; }
+
+main .espacio-interno {
+  padding: 1rem 0 1rem 0; }
+
+main div {
+  padding: 0; }
+  main div p {
+    font-style: italic;
+    padding: 0;
+    color: #FFECBF; }
+  main div ul {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 1rem 1.3rem 1rem;
+    border: 2px solid #FFA2F3; }
+    main div ul li {
+      list-style: none;
+      color: #FFECBF;
+      padding: 0.7rem;
+      margin-bottom: 1rem; }
+    main div ul a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: whitesmoke;
+      background-color: #BD34D1;
+      padding: 0.7rem;
+      box-shadow: 3px 2px 5px black;
+      text-shadow: 3px 2px 5px black; }
+
+/* estilos del main discografia */
+main .titulo {
+  padding-top: 1rem; }
+
+main ol li a {
+  text-align: center;
+  text-decoration: none;
+  color: #FFECBF;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-shadow: 3px 2px 5px black; }
+
+main ol li img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  border: 5px solid #FFECBF;
+  box-shadow: 2px 2px 5px black; }
+
+/* estilos del main contacto */
+main form {
+  width: 450px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8); }
+  main form fieldset {
+    text-align: center;
+    border-color: #FFA2F3; }
+    main form fieldset legend {
+      color: #FFECBF; }
+    main form fieldset div {
+      margin: 20px 80px 20px 80px; }
+      main form fieldset div textarea {
+        margin-top: 20px; }
+  main form .boton-enviar {
+    font-size: 1.2rem; }
+
+/* Media Querie */
+@media screen and (min-width: 576px) {
+  header {
+    align-items: center; }
+  /* estilos del main */
+  main .nombre {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem; }
+  main p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-size: 1.2rem; }
+  /* estilos del main discografia */
+  main ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+    grid-template-areas: "a-uno a-dos"
+ "img-uno img-dos"
+ "a-tres a-cuatro"
+ "img-tres img-cuatro"
+ "a-cinco a-seis"
+ "img-cinco img-seis"
+ "a-siete a-ocho"
+ "img-siete img-ocho"
+ "a-nueve a-nueve"
+ "img-nueve img-nueve";
+    align-items: center;
+    gap: 10px;
+    padding: 1rem; }
+    main ol .a-uno {
+      grid-area: a-uno; }
+    main ol .img-uno {
+      grid-area: img-uno; }
+    main ol .a-dos {
+      grid-area: a-dos; }
+    main ol .img-dos {
+      grid-area: img-dos; }
+    main ol .a-tres {
+      grid-area: a-tres; }
+    main ol .img-tres {
+      grid-area: img-tres; }
+    main ol .a-cuatro {
+      grid-area: a-cuatro; }
+    main ol .img-cuatro {
+      grid-area: img-cuatro; }
+    main ol .a-cinco {
+      grid-area: a-cinco; }
+    main ol .img-cinco {
+      grid-area: img-cinco; }
+    main ol .a-seis {
+      grid-area: a-seis; }
+    main ol .img-seis {
+      grid-area: img-seis; }
+    main ol .a-siete {
+      grid-area: a-siete; }
+    main ol .img-siete {
+      grid-area: img-siete; }
+    main ol .a-ocho {
+      grid-area: a-ocho; }
+    main ol .img-ocho {
+      grid-area: img-ocho; }
+    main ol .a-nueve {
+      grid-area: a-nueve; }
+    main ol .img-nueve {
+      grid-area: img-nueve; }
+    main ol li img {
+      width: 250px;
+      height: 250px; }
+  /* estilos del footer */
+  footer h3 {
+    margin-bottom: 0; }
+  footer ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem; }
+    footer ul li {
+      color: #BE80C5;
+      text-decoration: underline;
+      font-weight: bold; } }
+
+@media screen and (min-width: 992px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    /* estilos del nav BT */ }
+    header .boton-nav:hover {
+      background-color: black;
+      transform: scale(0.9); }
+    header .boton-color:hover {
+      color: whitesmoke;
+      font-weight: bold; }
+  /* estilos del main */
+  main p {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 1.3rem; }
+  /* estilos del main tickets */
+  main div ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 1fr; }
+    main div ul li {
+      margin: 0.7rem; }
+  main .boton:hover {
+    background-color: #FFA2F3;
+    color: black;
+    font-weight: bold;
+    transform: scale(0.9); }
+  /* estilos del main discografia */
+  main ol {
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+    grid-template-areas: "a-uno a-dos a-tres"
+ "img-uno img-dos img-tres"
+ "a-cuatro a-cinco a-seis"
+ "img-cuatro img-cinco img-seis"
+ "a-siete a-ocho a-nueve"
+ "img-siete img-ocho img-nueve";
+    align-items: center;
+    gap: 15px; }
+    main ol .a-uno {
+      grid-area: a-uno; }
+    main ol .img-uno {
+      grid-area: img-uno; }
+    main ol .a-dos {
+      grid-area: a-dos; }
+    main ol .img-dos {
+      grid-area: img-dos; }
+    main ol .a-tres {
+      grid-area: a-tres; }
+    main ol .img-tres {
+      grid-area: img-tres; }
+    main ol .a-cuatro {
+      grid-area: a-cuatro; }
+    main ol .img-cuatro {
+      grid-area: img-cuatro; }
+    main ol .a-cinco {
+      grid-area: a-cinco; }
+    main ol .img-cinco {
+      grid-area: img-cinco; }
+    main ol .a-seis {
+      grid-area: a-seis; }
+    main ol .img-seis {
+      grid-area: img-seis; }
+    main ol .a-siete {
+      grid-area: a-siete; }
+    main ol .img-siete {
+      grid-area: img-siete; }
+    main ol .a-ocho {
+      grid-area: a-ocho; }
+    main ol .img-ocho {
+      grid-area: img-ocho; }
+    main ol .a-nueve {
+      grid-area: a-nueve; }
+    main ol .img-nueve {
+      grid-area: img-nueve; }
+    main ol li a:hover {
+      font-weight: bold;
+      transform: scale(0.9);
+      color: #1AAE9F; }
+  /* estilos del main contacto */
+  .boton-enviar:hover {
+    font-weight: bold;
+    transform: scale(0.9);
+    color: whitesmoke;
+    background-color: #BD34D1; }
+  /* estilos del footer */
+  footer h3 {
+    text-align: start;
+    margin-left: 2rem; }
+  footer ul li {
+    text-align: start;
+    font-style: italic; } }

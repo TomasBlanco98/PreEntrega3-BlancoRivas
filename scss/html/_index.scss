@@ -1,0 +1,83 @@
+/* estilos del body */
+
+body {
+    background-image: url(../img/fondo-pantalla.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    .contenedor {
+        height: 100vh;
+        @include grid;
+    }
+}
+
+/* estilos del header */
+
+header {
+    @include fondo;
+    padding: 1rem;
+    grid-area: header;
+    h1 {
+        color: nth($colores, 4);
+        @include titulo;
+    }
+
+    /* estilos del nav BT */
+    nav {
+        .boton-nav {
+            background-color: $color-nav;
+            margin: 10px;
+            border-radius: 60px;
+            @include boton;
+        }
+        .boton-color {
+            color: nth($colores, 4);
+        }
+        .color-rosa {
+            background-color: nth($colores, 5);
+            color: nth($colores, 1);
+        }
+    }
+}
+
+/* estilos del main */
+
+main {
+    @extend %estilos-display;
+    grid-area: main;
+    .portada {
+        width: 100%;
+    }
+    .nombre {
+        display: none;
+    }
+    p {
+        color: $color-texto;
+        text-align: center;
+        padding: 1rem;
+        text-shadow: 3px 2px 5px nth($colores, 7);
+        margin-left: 4rem;
+        margin-right: 4rem;
+        span {
+            color: nth($colores, 2);
+        }
+        .frase {
+            font-weight: bold;
+            color: nth($colores, 2)
+        }
+    }
+}
+
+/* estilos del footer */
+
+footer {
+    @include fondo;
+    grid-area: footer;
+    h3 {
+        color: nth($colores, 4);
+        font-size: 16px;
+        text-align: center;
+    }
+    ul {
+        display: none;
+    }
+}

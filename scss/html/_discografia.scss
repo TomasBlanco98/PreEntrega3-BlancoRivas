@@ -1,0 +1,26 @@
+/* estilos del main discografia */
+
+main {
+    .titulo {
+        padding-top: 1rem;
+    }
+    ol {
+        li {
+            @extend %estilos-display;
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: $color-texto;
+                padding: 1.5rem;
+                font-size: 1.5rem;
+                text-shadow: 3px 2px 5px nth($colores, 7);
+            }
+            img {
+                @include medidas(300px, 300px);
+                border-radius: 200px;
+                border: 5px solid $color-texto;
+                box-shadow: 2px 2px 5px nth($colores, 7);
+            }
+        }
+    }
+}
