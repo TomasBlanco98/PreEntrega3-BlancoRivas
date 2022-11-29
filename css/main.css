@@ -27,9 +27,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr 0.1fr;
-    grid-template-areas: "header"
- "main"
- "footer"; }
+    grid-template-areas: "header" "main" "footer"; }
 
 /* estilos del header */
 header {
@@ -112,6 +110,9 @@ main div {
       color: #FFECBF;
       padding: 0.7rem;
       margin-bottom: 1rem; }
+      main div ul li span {
+        color: #1AAE9F;
+        font-size: 1.1rem; }
     main div ul a {
       text-decoration: none;
       text-transform: uppercase;
@@ -177,16 +178,7 @@ main form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
-    grid-template-areas: "a-uno a-dos"
- "img-uno img-dos"
- "a-tres a-cuatro"
- "img-tres img-cuatro"
- "a-cinco a-seis"
- "img-cinco img-seis"
- "a-siete a-ocho"
- "img-siete img-ocho"
- "a-nueve a-nueve"
- "img-nueve img-nueve";
+    grid-template-areas: "a-uno a-dos" "img-uno img-dos" "a-tres a-cuatro" "img-tres img-cuatro" "a-cinco a-seis" "img-cinco img-seis" "a-siete a-ocho" "img-siete img-ocho" "a-nueve a-nueve" "img-nueve img-nueve";
     align-items: center;
     gap: 10px;
     padding: 1rem; }
@@ -277,12 +269,7 @@ main form {
     gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
-    grid-template-areas: "a-uno a-dos a-tres"
- "img-uno img-dos img-tres"
- "a-cuatro a-cinco a-seis"
- "img-cuatro img-cinco img-seis"
- "a-siete a-ocho a-nueve"
- "img-siete img-ocho img-nueve";
+    grid-template-areas: "a-uno a-dos a-tres" "img-uno img-dos img-tres" "a-cuatro a-cinco a-seis" "img-cuatro img-cinco img-seis" "a-siete a-ocho a-nueve" "img-siete img-ocho img-nueve";
     align-items: center;
     gap: 15px; }
     main ol .a-uno {

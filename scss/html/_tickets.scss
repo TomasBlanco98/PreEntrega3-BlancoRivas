@@ -27,6 +27,10 @@ main {
                 color: $color-texto;
                 padding: 0.7rem;
                 margin-bottom: 1rem;
+                span {
+                    color: nth($colores, 2);
+                    font-size: 1.1rem;
+                }
             }
             a {
                 text-decoration: none;
