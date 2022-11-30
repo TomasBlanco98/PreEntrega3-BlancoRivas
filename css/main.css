@@ -37,9 +37,13 @@ header {
   grid-area: header;
   /* estilos del nav BT */ }
   header h1 {
-    color: #BE80C5;
     text-align: center;
     text-transform: uppercase; }
+    header h1 a {
+      text-decoration: none;
+      color: #BE80C5; }
+    header h1 a:hover {
+      color: #BE80C5; }
   header nav .boton-nav {
     background-color: #260E72;
     margin: 10px;
@@ -121,6 +125,8 @@ main div {
       padding: 0.7rem;
       box-shadow: 3px 2px 5px black;
       text-shadow: 3px 2px 5px black; }
+    main div ul a:hover {
+      color: whitesmoke; }
 
 /* estilos del main discografia */
 main .titulo {
@@ -239,6 +245,8 @@ main form {
     display: flex;
     justify-content: space-around;
     /* estilos del nav BT */ }
+    header h1 a:hover {
+      color: whitesmoke; }
     header .boton-nav:hover {
       background-color: black;
       transform: scale(0.9); }
@@ -257,11 +265,11 @@ main form {
     grid-template-columns: 5fr 1fr; }
     main div ul li {
       margin: 0.7rem; }
-  main .boton:hover {
-    background-color: #FFA2F3;
-    color: black;
-    font-weight: bold;
-    transform: scale(0.9); }
+    main div ul .boton:hover {
+      background-color: #FFA2F3;
+      color: black;
+      font-weight: bold;
+      transform: scale(0.9); }
   /* estilos del main discografia */
   main ol {
     display: grid;

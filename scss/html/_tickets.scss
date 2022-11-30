@@ -40,6 +40,9 @@ main {
                 padding: 0.7rem;
                 @include boton;
             }
+            a:hover {
+                color: nth($colores, 1);
+            }
         }
     }
     .subtitulo {
